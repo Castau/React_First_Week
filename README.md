@@ -12,7 +12,8 @@
 
 ### Comments to the individual assignments
 #### 3 Composing Components, Props-1
-#### d) >Make sure you understand why the parenthesis is needed after the return statement in the App component, and not in the Welcome Component.
+#### d) 
+>Make sure you understand why the parenthesis is needed after the return statement in the App component, and not in the Welcome Component.
 Since the return statement has more than one line of code a parenthesis is needed. This is because JavaScript will automatically insert a semicolon at the end of the line which the return statement is on, if possible. The parenthesis make this impossible.  
   
   
