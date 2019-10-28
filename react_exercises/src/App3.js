@@ -18,9 +18,13 @@ export default function App() {
             <Welcome name="Deathwing" />
 
             {/* 3 Composing Components, Props-2, c */}
-            <WelcomePerson person={names[0]} />
+            {/* <WelcomePerson person={names[0]} />
             <WelcomePerson person={names[1]} />
-            <WelcomePerson person={names[2]} />
+            <WelcomePerson person={names[2]} /> */}
+
+            {/* 3 Composing Components, Props-2, e */}
+            {names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}
+
 
             {/* This prop gives a runtime error due to the Type check */}
             <Welcome name={45} />
@@ -53,4 +57,3 @@ WelcomePerson.propTypes = {
         email: PropTypes.string.isRequired
     })
 };
-
