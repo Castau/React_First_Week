@@ -9,8 +9,8 @@ let app = <App />
 const DontUseMeForReal = () => {
     return (
         <div className="App" onClick={handleSelect}>
-            <a href="/" className="x" id="app1">ex1</a> &nbsp;
-            <a href="/" className="x" id="app2">ex2</a> &nbsp;
+            <a href="/" className="x" id="app1">Exercise 1</a> &nbsp;
+            <a href="/" className="x" id="app2">Exercise 2</a> &nbsp;
          {/* Add as many as you have exercises, but remember className="x" */}
             {app}
         </div>
@@ -26,6 +26,7 @@ function handleSelect(event) {
     switch (id) {
         case "app1": app = <App />; break;
         case "app2": app = <App2 />; break;
+        default: app = <App />; break;
     }
     ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
 }
