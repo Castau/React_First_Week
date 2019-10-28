@@ -7,7 +7,7 @@ import { names } from "./file2";
 
 // 3 Composing Components, Props-1, b
 export function Welcome(props) {
-    return <h1>Hello, {props.name}</h1>;
+    return <p>Hello, {props.name}</p>;
 }
 
 export default function App() {
