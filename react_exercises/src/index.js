@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import App2 from './App2';
+import App3 from './App3';
 
 let app = <App />
 
@@ -11,6 +12,8 @@ const DontUseMeForReal = () => {
         <div className="App" onClick={handleSelect}>
             <a href="/" className="x" id="app1">Exercise 1</a> &nbsp;
             <a href="/" className="x" id="app2">Exercise 2</a> &nbsp;
+            {/* 3 Composing Components, Props-1, c */}
+            <a href="/" className="x" id="app3">Exercise 3</a> &nbsp;
          {/* Add as many as you have exercises, but remember className="x" */}
             {app}
         </div>
@@ -26,6 +29,7 @@ function handleSelect(event) {
     switch (id) {
         case "app1": app = <App />; break;
         case "app2": app = <App2 />; break;
+        case "app3": app = <App3 />; break;
         default: app = <App />; break;
     }
     ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
