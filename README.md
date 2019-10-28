@@ -29,7 +29,7 @@ I found the answer I'm using on [Stackoverflow](https://stackoverflow.com/questi
 To fix the error caused by [this](https://reactjs.org/docs/lists-and-keys.html#keys):
 >*Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.*
 
-The key property has to be included in the map, like this (array-index is used as key since we haven't been thaught this yet): 
+The key property has to be included in the map, like this (array-index is used as key since we haven't been taught this properly yet): 
 ```javascript
 {names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}
 ```
