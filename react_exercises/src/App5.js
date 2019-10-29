@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// State and Events with React 2 a-c
 export default function App() {
 
     const [time, setTime] = useState(Time());
