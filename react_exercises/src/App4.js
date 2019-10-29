@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+
+// State and Events with React 1 a-d
 export default function App(props) {
 
     const { initialValue, increment } = props;
