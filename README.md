@@ -75,3 +75,14 @@ The key property has to be included in the map, like this (array-index is used a
       * As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: `const [state, setState] = useState(initial state);` fx `const [count, setCount] = useState(17);` to set the initial state. 
     * _How must you set state all other places?_
       * `setState(new value for state);` fx `setCount(count + 1)`
+      
+
+### Wednesday Assignment
+* Link to assignments: 
+  * [Forms and Controlled Components](https://docs.google.com/document/d/1rEaU8ObqoxHF3vt_fIsTfEb3yLRnVF8fCWobJJ9c2wo/edit#heading=h.hnvt8uwl2yk7)	
+  * [Lifting State Up](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit#heading=h.qe8anagqaw9l)	
+* The **Wednesday** assignments include these files:  
+  * Forms and Controlled Components Exercises
+    * [todo]()
+  * Lifting State Up Exercises
+    * [todo]()
