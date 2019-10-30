@@ -56,3 +56,4 @@ The key property has to be included in the map, like this (array-index is used a
     * [App6](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App6.js)
   * List and Keys Exercises
     * [ListDemoApp](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp.js)
+    * [ListDemoApp2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp2.js)
