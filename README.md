@@ -57,3 +57,21 @@ The key property has to be included in the map, like this (array-index is used a
   * List and Keys Exercises
     * [ListDemoApp](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp.js)
     * [ListDemoApp2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp2.js)
+  
+  * __List and Keys Questions__
+    * _What is the purpose of the key value, which must be given to individual rows in a react-list_
+      * Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. I.e. for React to identify changes in the Virtual DOM compared to the Real DOM, the keys are needed. If no keys are given, React assigns indexes as keys, as I have understood it. 
+    * _It's recommended to use a unique value from your data if available (like an ID). How do you get a unique value in a map callback, for data without a unique id?_
+      * One way of assigning unique keys is to use the index, like this:      
+      ```{names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}```  
+      However this is supposedly not the most optimal way of assigning unique keys, as this method is prone to errors (if the values are shifted fx). According to this [Stackoverflow answer's edit](https://stackoverflow.com/a/39549510) there's several other ways of assigning unique keys, like using `Date().getTime()` or using a npm package like uuid, which I think we'll learn about soon. 
+    * _What is the difference(s) between state and props?_
+      * [State:](https://www.w3schools.com/react/react_state.asp) React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
+      * [Props](https://www.w3schools.com/react/react_props.asp) are arguments passed into React components. Props are passed to components via HTML attributes. Props are like function arguments in JavaScript and attributes in HTML. To send props into a component, use the same syntax as HTML attributes. Props are immutable. 
+    * _For which scenarios would you use props, and for which would you use state?_
+      * State is used to re-render a component. So for something to change dynamically, the State object needs to change.
+      * Props are used to pass data from one component to another. 
+    * _Where is the only place you can set state directly as in:  this.state = {name: "Peter"};_
+      * As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: `const [state, setState] = useState(initial state);` fx `const [count, setCount] = useState(17);` to set the initial state. 
+    * _How must you set state all other places?_
+      * `setState(new value for state);` fx `setCount(count + 1)`
