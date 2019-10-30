@@ -1,7 +1,8 @@
 ## React_First_Week
 
 ### Monday Assignment
-* Link to assignment: [ES6 and React functional Components and props](https://docs.google.com/document/d/17iG0I2cpgdfmOIW9J-L8kNaO47DILFIzEc9Yi8yW6-o/edit#heading=h.dl1lz6dyu26o)	
+* Link to assignment: 
+  * [ES6 and React functional Components and props](https://docs.google.com/document/d/17iG0I2cpgdfmOIW9J-L8kNaO47DILFIzEc9Yi8yW6-o/edit#heading=h.dl1lz6dyu26o)	
 * The **Monday** assignments include these files:  
   * [App](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App.js)
   * [App2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App2.js)
@@ -45,8 +46,9 @@ The key property has to be included in the map, like this (array-index is used a
 
 
 ### Tuesday Assignment
-* Link to assignments: [State and Events with React](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit#heading=h.3z15ouauaojt)	
-* Link to assignments: [List and Keys  (Fall 2019)  ](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit#heading=h.hnvt8uwl2yk7)	
+* Link to assignments: 
+  * [State and Events with React](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit#heading=h.3z15ouauaojt)	
+  * [List and Keys  (Fall 2019)  ](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit#heading=h.hnvt8uwl2yk7)	
 * The **Tuesday** assignments include these files:  
   * [App4](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App4.js)
   * [App5](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App5.js)
