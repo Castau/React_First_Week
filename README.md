@@ -52,3 +52,4 @@ The key property has to be included in the map, like this (array-index is used a
 * The **Tuesday** assignments include these files:  
   * [App4](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App4.js)
   * [App5](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App5.js)
+  * [App6](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App6.js)
