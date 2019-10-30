@@ -8,21 +8,22 @@ import App4 from './App4';
 import App5 from './App5';
 import App6 from './App6';
 import App7 from "./ListDemoApp";
+import App8 from "./ListDemoApp2";
 
 let app = <App />
 
 const DontUseMeForReal = () => {
     return (
         <div className="App" onClick={handleSelect}>
-            <a href="/" className="x" id="app1">Monday Exercise 1</a> &nbsp;
-            <a href="/" className="x" id="app2">Monday Exercise 2</a> &nbsp;
+            <a href="/" className="x" id="app1">Monday 1</a> &nbsp;
+            <a href="/" className="x" id="app2">Monday 2</a> &nbsp;
             {/* 3 Composing Components, Props-1, c */}
-            <a href="/" className="x" id="app3">Monday Exercise 3</a> &nbsp;
-            <a href="/" className="x" id="app4">Tuesday Exercise 1</a> &nbsp;
-            <a href="/" className="x" id="app5">Tuesday Exercise 2</a> &nbsp;
-            <a href="/" className="x" id="app6">Tuesday Exercise 3</a> &nbsp;
-            <a href="/" className="x" id="app7">Tuesday Exercise 4</a> &nbsp;
-         {/* Add as many as you have exercises, but remember className="x" */}
+            <a href="/" className="x" id="app3">Monday 3</a> &nbsp;
+            <a href="/" className="x" id="app4">Tuesday State and Events 1</a> &nbsp;
+            <a href="/" className="x" id="app5">Tuesday State and Events 2</a> &nbsp;
+            <a href="/" className="x" id="app6">Tuesday State and Events 3</a> &nbsp;
+            <a href="/" className="x" id="app7">Tuesday List and Keys 1</a> &nbsp;
+            <a href="/" className="x" id="app8">Tuesday List and Keys 2</a> &nbsp;
             {app}
         </div>
     );
@@ -42,6 +43,7 @@ function handleSelect(event) {
         case "app5": app = <App5 />; break;
         case "app6": app = <App6 />; break;
         case "app7": app = <App7 />; break;
+        case "app8": app = <App8 />; break;
         default: app = <App />; break;
     }
     ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
