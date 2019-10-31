@@ -84,5 +84,28 @@ The key property has to be included in the map, like this (array-index is used a
 * The **Wednesday** assignments include these files:  
   * Forms and Controlled Components Exercises
     * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
+  * __List and Keys Questions__
+    * _In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?_
+      * (1) The value attribute in the input-tag is set to the object variable, like this  
+      `<input value={object.variable} />`  
+      (2) The onChange eventHandler on the form-element calls this when the input changes:  
+      ```
+      <form onChange={handleChange}><input name="inputname" value={object.variable}/></form>  
+        
+        const handleChange = (event) => {  
+            const target = event.target;  
+            const value = target.value;  
+            const name = target.name;  
+            setObject({ ...object, [name]: value });  
+        };```
+    * _What is the purpose of doing event.preventDefault() in an event handler?_
+      * [The preventDefault()](https://www.w3schools.com/jsref/event_preventdefault.asp) method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. So in this case it dosen't submit the form and reloads the webpage. 
+    * _What would be the effect of NOT doing event.preventDefault in a submit handler_
+      * The opposite of above - the default event would not be canceled, the form would submit and the webpage would be reloaded. 
+    * _Why don't we want to submit the traditional way, in a single page application?_
+      * [A single-page application](https://en.wikipedia.org/wiki/Single-page_application) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. If the form was submitted the traditional way, the webpage would be reloaded. 
+    * _Explain in words what it takes to implement the "Controlled Component" pattern for a form_
+      * The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
+  
   * Lifting State Up Exercises
     * [todo]()
