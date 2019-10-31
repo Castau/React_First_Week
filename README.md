@@ -83,6 +83,6 @@ The key property has to be included in the map, like this (array-index is used a
   * [Lifting State Up](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit#heading=h.qe8anagqaw9l)	
 * The **Wednesday** assignments include these files:  
   * Forms and Controlled Components Exercises
-    * [todo]()
+    * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
   * Lifting State Up Exercises
     * [todo]()
