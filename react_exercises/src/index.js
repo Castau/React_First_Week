@@ -9,6 +9,7 @@ import App5 from './App5';
 import App6 from './App6';
 import App7 from "./ListDemoApp";
 import App8 from "./ListDemoApp2";
+import App9 from "./FormDemo";
 
 let app = <App />
 
@@ -24,6 +25,7 @@ const DontUseMeForReal = () => {
             <a href="/" className="x" id="app6">Tuesday State and Events 3</a> &nbsp;
             <a href="/" className="x" id="app7">Tuesday List and Keys 1</a> &nbsp;
             <a href="/" className="x" id="app8">Tuesday List and Keys 2</a> &nbsp;
+            <a href="/" className="x" id="app9">Forms and Controlled Components 1</a> &nbsp;
             {app}
         </div>
     );
@@ -44,6 +46,7 @@ function handleSelect(event) {
         case "app6": app = <App6 />; break;
         case "app7": app = <App7 />; break;
         case "app8": app = <App8 />; break;
+        case "app9": app = <App9 />; break;
         default: app = <App />; break;
     }
     ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
