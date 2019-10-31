@@ -30,6 +30,7 @@ const DontUseMeForReal = () => {
                 <a href="/" className="x" id="app9">Forms and Controlled Components 1</a> &nbsp;
                 <a href="/" className="x" id="app10">Forms and Controlled Components 2</a> &nbsp;
             </div>
+            {/* moved out of other div to avoid prevent default in the app from the onclick (it breaks checkbox'es) */}
             {app}
         </div>
     );
