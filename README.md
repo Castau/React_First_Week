@@ -47,7 +47,16 @@
   * [API Interaction using fetch](https://docs.google.com/document/d/1R7o42j_CJesnrCcNNRmIARK14ocDvMqodWDzzw6lDzg/edit#)	
 * The **Thursday** assignments include these files:  
   * __API Interaction using fetch__
-    * [Separate project for this assignment](https://github.com/Castau/React_First_Week/tree/master/react-crud-rest-exercise-master)
+    * [Separate project for this assignment (react-crud-rest-exercise-master)](https://github.com/Castau/React_First_Week/tree/master/react-crud-rest-exercise-master)  
+      
+    
+### Friday Assignment
+* Link to assignments: 
+  * [SP6 - React, State and Fetch](https://docs.google.com/document/d/1R7o42j_CJesnrCcNNRmIARK14ocDvMqodWDzzw6lDzg/edit#)	
+* The **Friday** assignments include these files:  
+  * __SP6 - React, State and Fetch__
+    * [Separate project for this assignment (ReactStateandFetch-master)](https://github.com/Castau/React_First_Week/tree/master/ReactStateandFetch-master). N.B: I didn't do the last part of this assignment (part 7). 
+    
 
   
 
