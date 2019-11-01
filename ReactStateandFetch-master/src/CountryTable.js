@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const CountryTable = props => {
+    const pageSize = 4;
     const { countries, labels } = props;
+    const [countriesPrPage, setCountriesPrPage] = useState([]);
+    const [pageNum, setPageNum] = useState(1);
+    let pageTotal = (countries.length / pageSize);
+
+    const pageButtons = () => {
+        const buttons = [];
+        for (let i = 1; i <= pageTotal; i++) {
+            buttons.push(<button key={i} onClick={() => updatePage(i)} > {i} </button >);
+        }
+        return buttons;
+    }
+
+    useEffect(() => {
+        let startIndex = (pageNum - 1) * pageSize;
+        let endIndex = pageNum * pageSize;
+        setCountriesPrPage(countries.slice(startIndex, endIndex));
+    }, [countries, pageNum]);
+
+    const updatePage = (currentPage) => {
+        setPageNum(currentPage);
+    }
 
     const hiddenValues = array => {
         const amountValues = array.length - 1;
@@ -17,7 +39,7 @@ const CountryTable = props => {
                     ))}</tr>
                 </thead>
                 <tbody>
-                    {countries.map(country => (
+                    {countriesPrPage.map(country => (
                         <tr key={country.topLevelDomain}>
                             <td>{country.name}</td>
                             <td>{country.capital}</td>
@@ -48,6 +70,7 @@ const CountryTable = props => {
                     ))}
                 </tbody>
             </table>
+            <p>{pageButtons()}</p>
         </div>
     );
 };
