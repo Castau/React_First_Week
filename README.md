@@ -57,11 +57,11 @@ Since the return statement in the App function has more than one line of code a 
 To solve this I used the native shape() function, but I'm unsure if this is the correct way of assigning type checks on an object:
 ```javascript
 WelcomePerson.propTypes = {
-    person: PropTypes.shape({
-        firstName: PropTypes.string.isRequired,
-        lastName: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired
-    })
+  person: PropTypes.shape({
+   firstName: PropTypes.string.isRequired,
+   lastName: PropTypes.string.isRequired,
+   email: PropTypes.string.isRequired
+  })
 };
 ```
 I found the answer I'm using on [Stackoverflow](https://stackoverflow.com/questions/26923042/how-do-you-validate-the-proptypes-of-a-nested-object-in-reactjs?fbclid=IwAR3HoicJ-XIXdmpQqqIfqfYqwO9GYwhHJ4ULUGzsVNnwn_odf185snZ9nBo).
@@ -86,7 +86,9 @@ Keys help React identify which items have changed, are added, or are removed. Ke
 
 #### It's recommended to use a unique value from your data if available (like an ID). How do you get a unique value in a map callback, for data without a unique id?
 One way of assigning unique keys is to use the index, like this:      
-      ```{names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}```  
+ ```javascript 
+ {names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}
+ ```  
 However this is supposedly not the most optimal way of assigning unique keys, as this method is prone to errors (if the values are shifted fx). According to this [Stackoverflow answer's edit](https://stackoverflow.com/a/39549510) there's several other ways of assigning unique keys, like using `Date().getTime()` or using a npm package like uuid, which I think we'll learn about soon.  
 
 #### What is the difference(s) between state and props?
@@ -96,10 +98,24 @@ However this is supposedly not the most optimal way of assigning unique keys, as
 State is used to re-render a component. So for something to change dynamically, the State object needs to change. Props are used to pass data from one component to another.  
 
 #### Where is the only place you can set state directly as in:  this.state = {name: "Peter"};
-As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: `const [state, setState] = useState(initial state);` fx `const [count, setCount] = useState(17);` to set the initial state.  
+As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: 
+```javascript
+const [state, setState] = useState(initial state);
+``` 
+fx 
+```javascript 
+const [count, setCount] = useState(17);
+``` 
+to set the initial state.  
 
 #### How must you set state all other places?
- `setState(new value for state);` fx `setCount(count + 1)`
+ ```javascript 
+ setState(new value for state);
+ ``` 
+ fx 
+ ```javascript 
+ setCount(count + 1)
+ ```
       
 ### Wednesday Questions
 #### Forms and Controlled Components Questions
@@ -107,10 +123,14 @@ As far as I understand the only place state can be set directly like above is in
 #### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?  
   
 (1) The value attribute in the input-tag is set to the object variable, like this  
- ` <input value={object.variable} /> `  
+ ```react
+ <input value={object.variable} /> 
+ ```  
         
 (2) The onChange eventHandler on the form-element calls this when the input changes:  
- ` <form onChange={handleChange}><input name="inputname" value={object.variable}/></form> ` 
+```react
+<form onChange={handleChange}><input name="inputname" value={object.variable}/></form> 
+``` 
 
 ```javascript 
 const handleChange = (event) => {  
