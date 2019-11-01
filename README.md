@@ -33,6 +33,7 @@
 * The **Wednesday** assignments include these files:  
   * __Forms and Controlled Components Exercises__
     * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
+    * [FormDemoMultiple.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemoMultiple.js)
   * __Lifting State Up Exercises__
     * 1 [App11](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App11.js)
     * 1 [NewTodo](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewTodo.js)
@@ -44,13 +45,12 @@
 
 
 ### Questions Answered:
-#### Monday Questions
+### Monday Questions
 #### 3 Composing Components, Props-1
 #### d) 
 >Make sure you understand why the parenthesis is needed after the return statement in the App component, and not in the Welcome Component.
 
-Since the return statement in the App function has more than one line of code a parenthesis is needed. This is because JavaScript will automatically insert a semicolon at the end of the line which the return statement is on, if possible. The parenthesis make this impossible.  
-  
+Since the return statement in the App function has more than one line of code a parenthesis is needed. This is because JavaScript will automatically insert a semicolon at the end of the line which the return statement is on, if possible. The parenthesis make this impossible.    
   
 #### 3 Composing Components, Props-2
 #### d)
@@ -78,7 +78,7 @@ The key property has to be included in the map, like this (array-index is used a
 ![alt text](https://i.imgur.com/I3e5l0Y.png)
 
 
-#### Tuesday Questions
+### Tuesday Questions
 #### List and Keys
 
 #### What is the purpose of the key value, which must be given to individual rows in a react-list
@@ -101,16 +101,18 @@ As far as I understand the only place state can be set directly like above is in
 #### How must you set state all other places?
  `setState(new value for state);` fx `setCount(count + 1)`
       
-#### Wednesday Questions
+### Wednesday Questions
 #### Forms and Controlled Components Questions
 
-#### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?
+#### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?  
+  
 (1) The value attribute in the input-tag is set to the object variable, like this  
       ```
       <input value={object.variable} />
       ```  
+        
 (2) The onChange eventHandler on the form-element calls this when the input changes:  
-      ```javascript
+      ```
       <form onChange={handleChange}><input name="inputname" value={object.variable}/></form>  
         
         const handleChange = (event) => {  
