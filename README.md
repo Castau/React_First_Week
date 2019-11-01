@@ -41,8 +41,15 @@
     * 2 [App12](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App12.js)
     * 2 [NewPerson](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewPerson.js)
     * 2 [AllPersonsList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/AllPersonsList.js)
+   
+### Thursday Assignment
+* Link to assignments: 
+  * [API Interaction using fetch](https://docs.google.com/document/d/1R7o42j_CJesnrCcNNRmIARK14ocDvMqodWDzzw6lDzg/edit#)	
+* The **Thursday** assignments include these files:  
+  * __API Interaction using fetch__
+    * [Separate project for this assignment](https://github.com/Castau/React_First_Week/tree/master/react-crud-rest-exercise-master)
 
-
+  
 
 ## Questions
 ### Monday Questions
