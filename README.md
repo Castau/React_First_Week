@@ -9,10 +9,42 @@
     * [App2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App2.js)
     * [App3](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App3.js)
     * [file1](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file1.js)
-    * [file2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file2.js)
+    * [file2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file2.js)  
+      
+        
+### Tuesday Assignment
+* Link to assignments: 
+  * [State and Events with React](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit#heading=h.3z15ouauaojt)	
+  * [List and Keys](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit#heading=h.hnvt8uwl2yk7)	
+* The **Tuesday** assignments include these files:  
+  * __State and Events with React Exercises__
+    * [App4](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App4.js)
+    * [App5](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App5.js)
+    * [App6](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App6.js)
+  * __List and Keys Exercises__
+    * [ListDemoApp](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp.js)
+    * [ListDemoApp2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp2.js)    
+  
     
+### Wednesday Assignment
+* Link to assignments: 
+  * [Forms and Controlled Components](https://docs.google.com/document/d/1rEaU8ObqoxHF3vt_fIsTfEb3yLRnVF8fCWobJJ9c2wo/edit#heading=h.hnvt8uwl2yk7)	
+  * [Lifting State Up](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit#heading=h.qe8anagqaw9l)	
+* The **Wednesday** assignments include these files:  
+  * __Forms and Controlled Components Exercises__
+    * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
+  * __Lifting State Up Exercises__
+    * 1 [App11](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App11.js)
+    * 1 [NewTodo](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewTodo.js)
+    * 1 [ToDoList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/TodoList.js)
+    * 2 [App12](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App12.js)
+    * 2 [NewPerson](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewPerson.js)
+    * 2 [AllPersonsList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/AllPersonsList.js)
 
-### Comments to the individual assignments
+
+
+### Questions Answered:
+#### Monday Questions
 #### 3 Composing Components, Props-1
 #### d) 
 >Make sure you understand why the parenthesis is needed after the return statement in the App component, and not in the Welcome Component.
@@ -46,51 +78,39 @@ The key property has to be included in the map, like this (array-index is used a
 ![alt text](https://i.imgur.com/I3e5l0Y.png)
 
 
-### Tuesday Assignment
-* Link to assignments: 
-  * [State and Events with React](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit#heading=h.3z15ouauaojt)	
-  * [List and Keys](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit#heading=h.hnvt8uwl2yk7)	
-* The **Tuesday** assignments include these files:  
-  * __State and Events with React Exercises__
-    * [App4](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App4.js)
-    * [App5](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App5.js)
-    * [App6](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App6.js)
-  * __List and Keys Exercises__
-    * [ListDemoApp](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp.js)
-    * [ListDemoApp2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp2.js)
-  
-  * __List and Keys Questions__
-    * _What is the purpose of the key value, which must be given to individual rows in a react-list_
-      * Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. I.e. for React to identify changes in the Virtual DOM compared to the Real DOM, the keys are needed. If no keys are given, React assigns indexes as keys, as I have understood it. 
-    * _It's recommended to use a unique value from your data if available (like an ID). How do you get a unique value in a map callback, for data without a unique id?_
-      * One way of assigning unique keys is to use the index, like this:      
-      ```{names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}```  
-      However this is supposedly not the most optimal way of assigning unique keys, as this method is prone to errors (if the values are shifted fx). According to this [Stackoverflow answer's edit](https://stackoverflow.com/a/39549510) there's several other ways of assigning unique keys, like using `Date().getTime()` or using a npm package like uuid, which I think we'll learn about soon. 
-    * _What is the difference(s) between state and props?_
-      * [State:](https://www.w3schools.com/react/react_state.asp) React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
-      * [Props](https://www.w3schools.com/react/react_props.asp) are arguments passed into React components. Props are passed to components via HTML attributes. Props are like function arguments in JavaScript and attributes in HTML. To send props into a component, use the same syntax as HTML attributes. Props are immutable. 
-    * _For which scenarios would you use props, and for which would you use state?_
-      * State is used to re-render a component. So for something to change dynamically, the State object needs to change.
-      * Props are used to pass data from one component to another. 
-    * _Where is the only place you can set state directly as in:  this.state = {name: "Peter"};_
-      * As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: `const [state, setState] = useState(initial state);` fx `const [count, setCount] = useState(17);` to set the initial state. 
-    * _How must you set state all other places?_
-      * `setState(new value for state);` fx `setCount(count + 1)`
-      
+#### Tuesday Questions
+#### List and Keys
 
-### Wednesday Assignment
-* Link to assignments: 
-  * [Forms and Controlled Components](https://docs.google.com/document/d/1rEaU8ObqoxHF3vt_fIsTfEb3yLRnVF8fCWobJJ9c2wo/edit#heading=h.hnvt8uwl2yk7)	
-  * [Lifting State Up](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit#heading=h.qe8anagqaw9l)	
-* The **Wednesday** assignments include these files:  
-  * __Forms and Controlled Components Exercises__
-    * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
-  * __List and Keys Questions__
-    * _In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?_
-      * (1) The value attribute in the input-tag is set to the object variable, like this  
-      `<input value={object.variable} />`  
-      (2) The onChange eventHandler on the form-element calls this when the input changes:  
+#### What is the purpose of the key value, which must be given to individual rows in a react-list
+Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. I.e. for React to identify changes in the Virtual DOM compared to the Real DOM, the keys are needed. If no keys are given, React assigns indexes as keys, as I have understood it.   
+
+#### It's recommended to use a unique value from your data if available (like an ID). How do you get a unique value in a map callback, for data without a unique id?
+One way of assigning unique keys is to use the index, like this:      
+      ```{names.map((pers, index) => (<WelcomePerson person={pers} key={index} />))}```  
+However this is supposedly not the most optimal way of assigning unique keys, as this method is prone to errors (if the values are shifted fx). According to this [Stackoverflow answer's edit](https://stackoverflow.com/a/39549510) there's several other ways of assigning unique keys, like using `Date().getTime()` or using a npm package like uuid, which I think we'll learn about soon.  
+
+#### What is the difference(s) between state and props?
+[State:](https://www.w3schools.com/react/react_state.asp) React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders. [Props](https://www.w3schools.com/react/react_props.asp) are arguments passed into React components. Props are passed to components via HTML attributes. Props are like function arguments in JavaScript and attributes in HTML. To send props into a component, use the same syntax as HTML attributes. Props are immutable.  
+
+#### For which scenarios would you use props, and for which would you use state?
+State is used to re-render a component. So for something to change dynamically, the State object needs to change. Props are used to pass data from one component to another.  
+
+#### Where is the only place you can set state directly as in:  this.state = {name: "Peter"};
+As far as I understand the only place state can be set directly like above is in a Class components constructor. Since we use functional React (Hooks), we don't use Class componentes, so for us to set state directly, we do it like this in the Function Components: `const [state, setState] = useState(initial state);` fx `const [count, setCount] = useState(17);` to set the initial state.  
+
+#### How must you set state all other places?
+ `setState(new value for state);` fx `setCount(count + 1)`
+      
+#### Wednesday Questions
+#### Forms and Controlled Components Questions
+
+#### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?
+(1) The value attribute in the input-tag is set to the object variable, like this  
       ```
+      <input value={object.variable} />
+      ```  
+(2) The onChange eventHandler on the form-element calls this when the input changes:  
+      ```javascript
       <form onChange={handleChange}><input name="inputname" value={object.variable}/></form>  
         
         const handleChange = (event) => {  
@@ -98,21 +118,19 @@ The key property has to be included in the map, like this (array-index is used a
             const value = target.value;  
             const name = target.name;  
             setObject({ ...object, [name]: value });  
-        };```
-    * _What is the purpose of doing event.preventDefault() in an event handler?_
-      * [The preventDefault()](https://www.w3schools.com/jsref/event_preventdefault.asp) method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. So in this case it dosen't submit the form and reloads the webpage. 
-    * _What would be the effect of NOT doing event.preventDefault in a submit handler_
-      * The opposite of above - the default event would not be canceled, the form would submit and the webpage would be reloaded. 
-    * _Why don't we want to submit the traditional way, in a single page application?_
-      * [A single-page application](https://en.wikipedia.org/wiki/Single-page_application) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. If the form was submitted the traditional way, the webpage would be reloaded. 
-    * _Explain in words what it takes to implement the "Controlled Component" pattern for a form_
-      * The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
+        }; ```  
+        
+####  What is the purpose of doing event.preventDefault() in an event handler?
+[The preventDefault()](https://www.w3schools.com/jsref/event_preventdefault.asp) method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. So in this case it dosen't submit the form and reloads the webpage.  
+
+####  What would be the effect of NOT doing event.preventDefault in a submit handler
+The opposite of above - the default event would not be canceled, the form would submit and the webpage would be reloaded.  
+
+#### Why don't we want to submit the traditional way, in a single page application?
+[A single-page application](https://en.wikipedia.org/wiki/Single-page_application) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. If the form was submitted the traditional way, the webpage would be reloaded.  
+
+#### Explain in words what it takes to implement the "Controlled Component" pattern for a form
+The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
   
-  * __Lifting State Up Exercises__
-    * 1 [App11](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App11.js)
-    * 1 [NewTodo](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewTodo.js)
-    * 1 [ToDoList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/TodoList.js)
-    * 2 [App12](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App12.js)
-    * 2 [NewPerson](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewPerson.js)
-    * 2 [AllPersonsList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/AllPersonsList.js)
-  * __Lifting State Up Questions__
+
+#### Lifting State Up 
