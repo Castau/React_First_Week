@@ -123,12 +123,12 @@ to set the initial state.
 #### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?  
   
 (1) The value attribute in the input-tag is set to the object variable, like this  
- ```react
+ ```javascript
  <input value={object.variable} /> 
  ```  
         
 (2) The onChange eventHandler on the form-element calls this when the input changes:  
-```react
+```javascript
 <form onChange={handleChange}><input name="inputname" value={object.variable}/></form> 
 ``` 
 
