@@ -29,55 +29,22 @@ function ReservationForm() {
     };
 
     return (
-        <div><form onChange={handleChange}><label>Pay by Credit Card: </label>
-            <input
-                name="payByCreditCard"
-                type="checkbox"
-                checked={reservation.payByCreditCard} />
-            <br />
-            <input
-                name="firstName"
-                value={reservation.firstName}
-                placeholder="First Name" />
-            <br />
-            <input
-                name="lastName"
-                value={reservation.lastName}
-                placeholder="Last Name" />
-            <br />
-            <input
-                name="email"
-                value={reservation.email}
-                placeholder="E-mail" />
-            <br />
-            <input
-                name="phone"
-                value={reservation.phone}
-                placeholder="Phone" />
-            <br />
-            <input
-                name="street"
-                value={reservation.street}
-                placeholder="Adress" />
-            <br />
-            <input
-                name="city"
-                value={reservation.city}
-                placeholder="City" />
-            <br />
-            <input
-                name="zip"
-                value={reservation.zip}
-                placeholder="Zip code" />
-            <br />
-            <input
-                name="country"
-                value={reservation.country}
-                placeholder="Country" />
-            <br />
-            <button onClick={handleSubmit}>Submit</button>
-        </form>
-            <p>{JSON.stringify(reservation)}</p></div>
+        <div>
+            <form onChange={handleChange}>
+                <label>Pay by Credit Card: </label>
+                <input name="payByCreditCard" type="checkbox" checked={reservation.payByCreditCard} /><br />
+                <input name="firstName" value={reservation.firstName} placeholder="First Name" /><br />
+                <input name="lastName" value={reservation.lastName} placeholder="Last Name" /><br />
+                <input name="email" value={reservation.email} placeholder="E-mail" /><br />
+                <input name="phone" value={reservation.phone} placeholder="Phone" /><br />
+                <input name="street" value={reservation.street} placeholder="Adress" /><br />
+                <input name="city" value={reservation.city} placeholder="City" /><br />
+                <input name="zip" value={reservation.zip} placeholder="Zip code" /><br />
+                <input name="country" value={reservation.country} placeholder="Country" /><br />
+                <button onClick={handleSubmit}>Submit</button>
+            </form>
+            <p>{JSON.stringify(reservation)}</p>
+        </div>
     );
 }
 export default ReservationForm;
