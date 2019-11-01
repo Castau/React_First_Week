@@ -4,11 +4,12 @@
 * Link to assignment: 
   * [ES6 and React functional Components and props](https://docs.google.com/document/d/17iG0I2cpgdfmOIW9J-L8kNaO47DILFIzEc9Yi8yW6-o/edit#heading=h.dl1lz6dyu26o)	
 * The **Monday** assignments include these files:  
-  * [App](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App.js)
-  * [App2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App2.js)
-  * [App3](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App3.js)
-  * [file1](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file1.js)
-  * [file2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file2.js)
+  * __ES6 and React functional Components and props Exercises__
+    * [App](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App.js)
+    * [App2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App2.js)
+    * [App3](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App3.js)
+    * [file1](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file1.js)
+    * [file2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/file2.js)
     
 
 ### Comments to the individual assignments
@@ -50,11 +51,11 @@ The key property has to be included in the map, like this (array-index is used a
   * [State and Events with React](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit#heading=h.3z15ouauaojt)	
   * [List and Keys](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit#heading=h.hnvt8uwl2yk7)	
 * The **Tuesday** assignments include these files:  
-  * State and Events with React Exercises
+  * __State and Events with React Exercises__
     * [App4](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App4.js)
     * [App5](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App5.js)
     * [App6](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App6.js)
-  * List and Keys Exercises
+  * __List and Keys Exercises__
     * [ListDemoApp](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp.js)
     * [ListDemoApp2](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/ListDemoApp2.js)
   
@@ -82,7 +83,7 @@ The key property has to be included in the map, like this (array-index is used a
   * [Forms and Controlled Components](https://docs.google.com/document/d/1rEaU8ObqoxHF3vt_fIsTfEb3yLRnVF8fCWobJJ9c2wo/edit#heading=h.hnvt8uwl2yk7)	
   * [Lifting State Up](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit#heading=h.qe8anagqaw9l)	
 * The **Wednesday** assignments include these files:  
-  * Forms and Controlled Components Exercises
+  * __Forms and Controlled Components Exercises__
     * [FormDemo.js](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/FormDemo.js)
   * __List and Keys Questions__
     * _In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?_
@@ -107,5 +108,11 @@ The key property has to be included in the map, like this (array-index is used a
     * _Explain in words what it takes to implement the "Controlled Component" pattern for a form_
       * The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
   
-  * Lifting State Up Exercises
-    * [todo]()
+  * __Lifting State Up Exercises__
+    * 1 [App11](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App11.js)
+    * 1 [NewTodo](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewTodo.js)
+    * 1 [ToDoList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/TodoList.js)
+    * 2 [App12](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/App12.js)
+    * 2 [NewPerson](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/NewPerson.js)
+    * 2 [AllPersonsList](https://github.com/Castau/React_First_Week/blob/master/react_exercises/src/AllPersonsList.js)
+  * __Lifting State Up Questions__
