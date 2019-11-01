@@ -113,14 +113,17 @@ As far as I understand the only place state can be set directly like above is in
         
 (2) The onChange eventHandler on the form-element calls this when the input changes:  
       ```
-      <form onChange={handleChange}><input name="inputname" value={object.variable}/></form>  
-        
+      <form onChange={handleChange}><input name="inputname" value={object.variable}/></form> 
+      ``` 
+       
+      ```javascript        
         const handleChange = (event) => {  
             const target = event.target;  
             const value = target.value;  
             const name = target.name;  
             setObject({ ...object, [name]: value });  
-        }; ```  
+        }; 
+        ```  
         
 ####  What is the purpose of doing event.preventDefault() in an event handler?
 [The preventDefault()](https://www.w3schools.com/jsref/event_preventdefault.asp) method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. So in this case it dosen't submit the form and reloads the webpage.  
