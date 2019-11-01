@@ -155,3 +155,15 @@ The component that renders the form, controls what happens in the form on subseq
   
 
 #### Lifting State Up 
+#### What is meant by the react term “Lifting State Up”?
+
+To share a state between two components, the most common operation is to move it up to their closest common ancestor. This is called “lifting state up”. This way when an input is updated another component should reflect the new shared state. The descendant component is controlled by the ancestor.
+
+#### Where do you lift it up to?
+The state is lifted to the closest common ancestor to the components that need the state. 
+
+#### Which way does React recommend data to flow: From sibling to sibling, from bottom to top or from top to bottom?
+From top to bottom. 
+
+#### Lifting state up, involves a great deal of boilerplate code, what’s the benefit we get from doing “things” like this?
+The code is easier to test and debug
