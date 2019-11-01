@@ -46,13 +46,13 @@
 
 ## Questions
 ### Monday Questions
-#### 3 Composing Components, Props-1
+### 3 Composing Components, Props-1
 #### d) 
 >Make sure you understand why the parenthesis is needed after the return statement in the App component, and not in the Welcome Component.
 
 Since the return statement in the App function has more than one line of code a parenthesis is needed. This is because JavaScript will automatically insert a semicolon at the end of the line which the return statement is on, if possible. The parenthesis make this impossible.    
   
-#### 3 Composing Components, Props-2
+### 3 Composing Components, Props-2
 #### d)
 To solve this I used the native shape() function, but I'm unsure if this is the correct way of assigning type checks on an object:
 ```javascript
@@ -79,7 +79,7 @@ The key property has to be included in the map, like this (array-index is used a
 
 
 ### Tuesday Questions
-#### List and Keys
+### List and Keys
 
 #### What is the purpose of the key value, which must be given to individual rows in a react-list
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. I.e. for React to identify changes in the Virtual DOM compared to the Real DOM, the keys are needed. If no keys are given, React assigns indexes as keys, as I have understood it.   
@@ -118,7 +118,7 @@ to set the initial state.
  ```
       
 ### Wednesday Questions
-#### Forms and Controlled Components Questions
+### Forms and Controlled Components Questions
 
 #### In a Controlled Component React state is made the "Single source of truth", so how (1) Do we ensure that input controls like text, textarea or select always presents the value found in the components state? (2) Do we ensure that a controls state, always matches the value found in an input control?  
   
@@ -153,8 +153,8 @@ The opposite of above - the default event would not be canceled, the form would 
 #### Explain in words what it takes to implement the "Controlled Component" pattern for a form
 The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
   
-
-#### Lifting State Up 
+  
+### Lifting State Up 
 #### What is meant by the react term “Lifting State Up”?
 
 To share a state between two components, the most common operation is to move it up to their closest common ancestor. This is called “lifting state up”. This way when an input is updated another component should reflect the new shared state. The descendant component is controlled by the ancestor.
