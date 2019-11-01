@@ -154,6 +154,7 @@ The opposite of above - the default event would not be canceled, the form would 
 The component that renders the form, controls what happens in the form on subsequent input. Since the value attribute set on the form element is `value={object.variable}` the React state will be in control. The state is handled by the UseState only, which is set in the `handleChange()`.  
   
   
+  
 ### Lifting State Up 
 #### What is meant by the react term “Lifting State Up”?
 
