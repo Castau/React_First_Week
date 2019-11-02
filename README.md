@@ -1,5 +1,7 @@
 ## React_First_Week
 
+This weeks assignments are all placed in [this (React_First_Week)](https://github.com/Castau/React_First_Week) repository. To see what belongs to a specific date, see the links below each day, in the following. All questions are answered in the bottom of this readme, also sectioned by the week days.  
+
 ### Monday Assignment
 * Link to assignment: 
   * [ES6 and React functional Components and props](https://docs.google.com/document/d/17iG0I2cpgdfmOIW9J-L8kNaO47DILFIzEc9Yi8yW6-o/edit#heading=h.dl1lz6dyu26o)	
