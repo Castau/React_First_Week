@@ -54,7 +54,7 @@ This weeks assignments are all placed in [this (React_First_Week)](https://githu
     
 ### Friday Assignment
 * Link to assignments: 
-  * [SP6 - React, State and Fetch](https://docs.google.com/document/d/1R7o42j_CJesnrCcNNRmIARK14ocDvMqodWDzzw6lDzg/edit#)	
+  * [SP6 - React, State and Fetch](https://docs.google.com/document/d/1AvT_g3dmCLP65Pw441KyDf4IeCYn-uhdUpcrvb92jyI/edit#)	
 * The **Friday** assignments include these files:  
   * __SP6 - React, State and Fetch__
     * [Separate project for this assignment (ReactStateandFetch-master)](https://github.com/Castau/React_First_Week/tree/master/ReactStateandFetch-master). N.B: I didn't do the last part of this assignment (part 7). 
