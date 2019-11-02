@@ -210,6 +210,8 @@ In this example the value in the tabledata tag is specific for the given object 
 #### Explain about the Observer pattern, and where you have used it, both with Java and JavaScript.  
 [In the Observer Pattern](https://en.wikipedia.org/wiki/Observer_pattern), shown in the following diagram, an object (called the Subject) maintains a list of dependant objects, which all implement the Observer Interface (these objects are called observers). The Subject can call a notify-method, which notifies all observers when the state in the Subject changes. The Subject is also responsible for registrering an unregistering the observers. 
 
-We haven't used this design pattern yet in Java or Javascript (or any other language). In react the way child components are "notified" of a state change in an ancestor (and thereby also in siblings with the lifting state up), seems similar, but I'm unsure if this is an actual implementation of the Observer design pattern. 
+We haven't used this design pattern yet in Java or Javascript (or any other language). In react the way child components are "notified" of a state change in an ancestor (and thereby also in siblings with the lifting state up), seems similar, but I'm unsure if this is an actual implementation of the Observer design pattern.  
+  
+  
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1280px-Observer_w_update.svg.png)
 
